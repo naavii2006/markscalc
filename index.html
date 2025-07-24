@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JNVST गुण गणक</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧮 JNVST गुण गणक</h1>
+    <form id="marksForm">
+      <label for="mental">बौद्धिक क्षमता (40 पैकी):</label>
+      <input type="number" id="mental" max="40" min="0" required>
+
+      <label for="math">गणित (20 पैकी):</label>
+      <input type="number" id="math" max="20" min="0" required>
+
+      <label for="language">भाषा (20 पैकी):</label>
+      <input type="number" id="language" max="20" min="0" required>
+
+      <button type="submit">गुण काढा</button>
+    </form>
+
+    <div class="result" id="resultSection" style="display:none;">
+      <h2>🎯 निकाल</h2>
+      <p><strong>एकूण गुण:</strong> <span id="totalMarks"></span> / 100</p>
+      <p><strong>टक्केवारी:</strong> <span id="percentage"></span>%</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
